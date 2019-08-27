@@ -50,10 +50,16 @@ public class LoginActivity extends AppCompatActivity {
 			Toast.makeText(LoginActivity.this, "Password tidak boleh kosong", Toast.LENGTH_SHORT).show();
 			etPassword.requestFocus();
 		} else {
+			boolean login_admin = false;
+			
+			if (etUsername.getText().equals("admin") && etPassword.getText().equals("admin")) {
+				login_admin = true;
+			}
+			
 			boolean validasi = this.validateCrundential();
 			
 			try {
-				if (validasi) {
+				if (validasi && login_admin) {
 					Intent i = new Intent(LoginActivity.this, AdminActivity.class);
 					i.putExtra(NAME_KEY, name);
 					startActivity(i);
