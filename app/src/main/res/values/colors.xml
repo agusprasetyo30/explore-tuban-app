@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorBackgroundSplash">#26a65b</color>
+    <color name="acMilanColor">#FB090B</color>
+    <color name="backgroundSplashScreen">#8A271E</color>
+    <color name="colorBackground">#E6EAED</color>
+    <color name="colorFlatGreen">#27ae60</color>
+    <color name="colorButtonMain1">#e67e22</color>
+    <color name="colorButtonMain2">#43A047</color>
+    <color name="colorButtonLogin">#2ecc71</color>
+    <color name="colorButtonRegister">#EC7D1A</color>
+    <color name="oranyeBackgroundSmooth">#FF6A14</color>
+    <color name="colorUpdate">#FFC107</color>
+</resources>

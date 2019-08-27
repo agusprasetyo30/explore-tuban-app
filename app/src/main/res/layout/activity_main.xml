@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity"
+    tools:menu="@menu/menu_login">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.synnapps.carouselview.CarouselView
+            android:id="@+id/carouselView"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            app:fillColor="#FFFFFF"
+            app:pageColor="#00000000"
+            app:radius="6dp"
+            app:slideInterval="3000"
+            app:strokeColor="#FF777777"
+            app:strokeWidth="1dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/linierButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/carouselView">
+
+            <!-- Tombol 1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/wisata_button"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="@dimen/value_horizontal_size"
+                    android:layout_marginTop="@dimen/value_vertical_size"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/button_main"
+                    android:drawableTop="@drawable/wisata_logo"
+                    android:drawablePadding="5dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical|center"
+                    android:onClick="clickWisataButton"
+                    android:padding="16dp"
+                    android:textAllCaps="false"
+                    android:text="Tempat Wisata"
+                    android:textColor="@android:color/white"
+                    android:textSize="19sp" />
+
+                <Button
+                    android:id="@+id/pendidikan_button"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="@dimen/value_vertical_size"
+                    android:layout_marginRight="@dimen/value_horizontal_size"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/button_main"
+                    android:drawableTop="@drawable/study_logo"
+                    android:drawablePadding="5dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical|center"
+                    android:onClick="clickPendidikanButton"
+                    android:padding="16dp"
+                    android:textAllCaps="false"
+                    android:text="\nPendidikan"
+                    android:textColor="@android:color/white"
+                    android:textSize="19sp" />
+            </LinearLayout>
+
+            <!-- Tombol 2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/kuliner_button"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="@dimen/value_horizontal_size"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="@dimen/value_vertical_size"
+                    android:background="@drawable/button_main"
+                    android:drawableTop="@drawable/makanan_logo"
+                    android:drawablePadding="5dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical|center"
+                    android:onClick="clickMakananButton"
+                    android:padding="16dp"
+                    android:textAllCaps="false"
+                    android:text="Makanan Khas"
+                    android:textColor="@android:color/white"
+                    android:textSize="19sp" />
+
+                <Button
+                    android:id="@+id/penginapan_button"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="@dimen/value_horizontal_size"
+                    android:layout_marginBottom="@dimen/value_vertical_size"
+                    android:background="@drawable/button_main"
+                    android:drawableTop="@drawable/penginapan_logo"
+                    android:drawablePadding="5dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical|center"
+                    android:onClick="clickPenginapanButton"
+                    android:padding="16dp"
+                    android:textAllCaps="false"
+                    android:text="\nPenginapan"
+                    android:textColor="@android:color/white"
+                    android:textSize="19sp" />
+            </LinearLayout>
+
+            <!-- Tombol 3-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/oleh_oleh_button"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="@dimen/value_horizontal_size"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="@dimen/value_horizontal_size"
+                    android:layout_marginBottom="@dimen/value_vertical_size"
+                    android:background="@drawable/button_main"
+                    android:drawableTop="@drawable/oleh_oleh_logo"
+                    android:drawablePadding="5dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical|center"
+                    android:onClick="clickOlehOlehButton"
+                    android:padding="16dp"
+                    android:textAllCaps="false"
+                    android:text="Oleh-oleh"
+                    android:textColor="@android:color/white"
+                    android:textSize="19sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/app_version"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linierButton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

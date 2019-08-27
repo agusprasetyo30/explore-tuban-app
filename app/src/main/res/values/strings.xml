@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Explore Tuban</string>
+    <string name="text_splash_screen">Explore Tuban</string>
+    <string name="app_version">Version 1.0.0</string>
+    <string name="list_squad_button_text">List Squad</string>
+    <string name="profile_menu">Profile</string>
+    <string name="add_user_menu">Tambah User</string>
+    <string name="logout_menu_text">Logout</string>
+    <string-array name="jenis_data">
+        <item>Tempat Wisata</item>
+        <item>Pendidikan</item>
+        <item>Makanan Khas</item>
+        <item>Penginapan</item>
+        <item>Oleh-oleh</item>
+    </string-array>
+</resources>

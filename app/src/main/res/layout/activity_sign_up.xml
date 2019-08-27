@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/value_horizontal_size"
+        android:background="@color/oranyeBackgroundSmooth"
+        android:weightSum="5"
+        android:paddingTop="70dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/et_reg_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="Name"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_round"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/et_reg_username"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="Username"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_round"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="13dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/et_reg_password"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="Password"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_round"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="13dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textSize="18sp"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/et_reg_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="Confirm Password"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_round"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="13dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textSize="18sp"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:textSize="18sp"
+            android:text="Register"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/register_button_round"
+            android:textColor="@android:color/white"
+            android:foreground="?selectableItemBackground"
+            android:onClick="clickRegister"/>
+    </LinearLayout>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/img_sign_up"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/sign_up_logo"
+        app:civ_border_color="@color/colorBackground"
+        app:civ_shadow_gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

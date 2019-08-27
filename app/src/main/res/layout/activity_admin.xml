@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@color/oranyeBackgroundSmooth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WELCOME"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_semi_bold"/>
+
+        <TextView
+            android:id="@+id/tv_name_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agus Prasetyo"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:fontFamily="@font/montserrat_semi_bold"/>
+    </LinearLayout>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/img_sign_up"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="90dp"
+
+        android:src="@drawable/user_login_success_logo"
+        app:civ_border_color="@color/colorBackground"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/img_sign_up">
+
+        <Button
+            android:id="@+id/tambah_data_button"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="@dimen/value_horizontal_size"
+            android:layout_marginTop="@dimen/value_vertical_size"
+            android:layout_marginRight="@dimen/value_horizontal_size"
+            android:layout_marginBottom="@dimen/value_vertical_size"
+            android:background="@drawable/button_main"
+            android:drawableTop="@drawable/tambah_data_logo"
+            android:drawablePadding="5dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center_vertical|center"
+            android:onClick="tambahData_click"
+            android:padding="16dp"
+            android:textAllCaps="false"
+            android:text="Tambah Data"
+            android:textColor="@android:color/white"
+            android:textSize="19sp" />
+
+        <Button
+            android:id="@+id/lihat_data_button"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="@dimen/value_horizontal_size"
+            android:layout_marginTop="@dimen/value_vertical_size"
+            android:layout_marginRight="@dimen/value_horizontal_size"
+            android:layout_marginBottom="@dimen/value_vertical_size"
+            android:background="@drawable/button_main"
+            android:drawableTop="@drawable/lihat_data_logo"
+            android:drawablePadding="5dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center_vertical|center"
+            android:padding="16dp"
+            android:textAllCaps="false"
+            android:text="Lihat Data"
+            android:textColor="@android:color/white"
+            android:textSize="19sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
